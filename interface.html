@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="user" class="main">
+    <form>
+    <div class="inline-container emotions">
+      <label><input type="radio" id="happy" name="emotion" value="happy"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/beaming-face-with-smiling-eyes_1f601.png"></label>
+      <label><input type="radio" id="sad" name="emotion" value="sad"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/crying-face_1f622.png"></label>
+      <label><input type="radio" id="fear" name="emotion" value="fear"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/fearful-face_1f628.png"></label>
+      <label><input type="radio" id="anger" name="emotion" value="anger"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/pouting-face_1f621.png"></label>
+      <label><input type="radio" id="surprise" name="emotion" value="surprise"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/face-with-open-mouth_1f62e.png"></label>
+      <label><input type="radio" id="disgust" name="emotion" value="disgust"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/face-vomiting_1f92e.png"></label>
+    </div>
+      <input id="speech" placeholder="Type what you want to say here:"></input>
+    </form>
+    <a href="#supervisor" id="toSupervisor" class="switchView">To Supervisor View</a>
+    </div>
+
+
+
+    <div id="supervisor" class="main">
+    <div class="view-contain">
+      <h1>History</h1>
+      <br>
+      <div id="pastEmotion" class="inline-container emotions"></div>
+    </div>
+    <div class="view-contain">
+      <h1>Current</h1>
+      <div id="currentEmotion" class="inline-container emotions"></div>
+    </div>
+    <div class="view-contain">
+      <h1>Speech</h1>
+      <input id="speechDisplay" placeholder="Tia's thoughts here." readonly></input>
+    </div>
+    <a href="#user" id="toUser" class="switchView">To User View</a>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
